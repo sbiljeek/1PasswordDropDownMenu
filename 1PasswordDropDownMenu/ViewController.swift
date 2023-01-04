@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         navigationItem.title = "Home"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        let plusImage = UIImage(systemName: "plus.circle.fill")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor(named: "blue") ?? .systemTeal).withConfiguration(UIImage.SymbolConfiguration(pointSize: 26, weight: .regular, scale: .large))
+        let plusImage = UIImage(systemName: "plus.circle.fill")?.withRenderingMode(.alwaysOriginal).withTintColor(UIColor(named: "customBlue") ?? .systemTeal).withConfiguration(UIImage.SymbolConfiguration(pointSize: 26, weight: .regular, scale: .large))
         
         lazy var plusBarButtonItem: UIBarButtonItem = {
             let barButtonItem = UIBarButtonItem()
@@ -170,10 +170,6 @@ class ViewController: UIViewController {
         
         navigationItem.rightBarButtonItem = plusBarButtonItem
         navigationItem.leftBarButtonItem = profileBarButtonItem
-    }
-    
-    @objc fileprivate func handleShowMenu() {
-        
     }
 }
 
